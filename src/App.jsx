@@ -67,16 +67,16 @@ function App() {
         <ul>
           {todo.map((value, index) => (
             <li key={index} className="todo-item">
-              <span className="todo-text">{value}</span>
-              <div className="todo-buttons">
-                <button onClick={() => handleEdit(value, index)} className="edit">
-                  Edit
-                </button>
-                <button onClick={() => handleDelete(index)} className="delete">
-                  Delete
-                </button>
-              </div>
-            </li>
+  <span className="todo-text" title={value}>{value}</span>
+  <div className="todo-buttons">
+    <button onClick={() => handleEdit(value, index)} className="edit">
+      Edit
+    </button>
+    <button onClick={() => handleDelete(index)} className="delete">
+      Delete
+    </button>
+  </div>
+</li>
           ))}
         </ul>
       </div>
